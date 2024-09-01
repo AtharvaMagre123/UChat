@@ -14,7 +14,7 @@ export const SocketContextProvider = ({ children }) => {
   const { authUser } = useAuthContext();
   useEffect(() => {
     if (authUser) {
-      const socket = io("https://main--glittering-tarsier-28fa78.netlify.app", {
+      const socket = io("https://uchat-m106.onrender.com", {
 				query: {
 					userId: authUser._id,
 				},
